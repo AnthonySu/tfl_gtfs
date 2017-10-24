@@ -1,0 +1,28 @@
+[package]
+name = "tflgtfs"
+version = "0.1.0"
+authors = ["Tom Burdick <thomas.burdick@gmail.com>"]
+build = "build.rs"
+
+[features]
+default = ["serde_codegen"]
+nightly = ["serde_macros", "clippy"]
+
+[build-dependencies]
+serde_codegen = { version = "0.7", optional = true }
+syntex = "0.39"
+
+[dependencies]
+ansi_term = "0.7"
+clap = "2.3"
+csv = "0.14"
+env_logger = "0.3"
+hyper = "0.9"
+log = "0.3"
+rand = "0.3"
+rust-crypto = "0.2"
+scoped_threadpool = "0.1"
+serde = "0.7"
+serde_json = "0.7"
+serde_macros = { version = "0.7", optional = true }
+clippy = { version = "*", optional = true }

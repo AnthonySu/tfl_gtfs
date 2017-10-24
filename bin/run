@@ -1,0 +1,10 @@
+#!/bin/bash
+
+run () {
+	MAILTO="tfl.feeds.status@gmail.com"
+	echo "Running tflgtfs"
+	/home/tflgtfs/./target/release/tflgtfs fetch-lines --format gtfs
+	echo "Complete"
+}
+
+run

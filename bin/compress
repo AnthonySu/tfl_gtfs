@@ -1,0 +1,8 @@
+#!/bin/bash
+
+run () {
+	echo "Cleaning old gtfs files"
+	tar -zcvf /home/tflgtfs/data/*/.tar.gz /home/tflgtfs/gtfs/
+}
+
+run

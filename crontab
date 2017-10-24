@@ -1,0 +1,13 @@
+MAILTO="TODO@gmail.com"
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+AWS_CONFIG_FILE="/home/tflgtfs/config"
+AWS_ACCESS_KEY_ID="TODO"
+AWS_SECRET_ACCESS_KEY="TODO"
+
+# Scripts to run
+0 * * * * root /usr/bin/python /home/tflgtfs/tfl_gtfs.py 2>&1 | mail -s "tfl_gtfs outputs" TODO@gmail.com
+
+# Don't remove the empty line at the end of this file. It is required to run the cron job

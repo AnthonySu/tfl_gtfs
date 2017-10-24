@@ -1,0 +1,8 @@
+#!/bin/bash
+
+run () {
+	echo "Cleaning old gtfs files"
+	rm -fr /home/tflgtfs/gtfs/*
+}
+
+run
