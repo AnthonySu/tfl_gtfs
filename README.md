@@ -1,3 +1,5 @@
+Forked from - https://github.com/CommuteStream/tflgtfs
+
 Replace "TODO" with appropriate aws credentials and gmail account for logging. 
 
 cron job schedules it to run hourly.
